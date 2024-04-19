@@ -1,7 +1,7 @@
 // Наш герой.
 
 class Hero {
-  constructor({ position }) {
+  constructor({ position, score }) {
     this.skin = '🙋';
     this.position = position;
     this.score = score || 0;
