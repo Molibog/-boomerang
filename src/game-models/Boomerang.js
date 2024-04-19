@@ -4,7 +4,7 @@
 
 class Boomerang {
   constructor({ position, isThrowed = false, isComingBack = false }) {
-    this.skin = '🌀';
+    this.skin = '👉';
     this.position = position;
     this.isThrowed = isThrowed;
     this.isComingBack = isComingBack;
@@ -25,15 +25,17 @@ class Boomerang {
       this.moveLeft();
     }
   }
-  
+
   moveLeft() {
     // Идём влево.
     this.position -= 1;
+    this.skin = '👈';
   }
 
   moveRight() {
     // Идём вправо.
     this.position += 1;
+    this.skin = "👉";
   }
 }
 
